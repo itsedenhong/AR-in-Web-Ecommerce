@@ -25,3 +25,15 @@ h1 {
     transform: translate(-50%, -50%);
     z-index: 1; 
 }
+
+.product-title {
+    position: absolute;
+    top: 50px; /* 모델 위에 위치할 높이 조정 */
+    left: 50%; /* 중앙 정렬 */
+    transform: translateX(-50%);
+    z-index: 2; /* 모델 위에 나타나도록 z-index 조정 */
+    color: #fff; /* 텍스트 색상 */
+    background-color: rgba(0, 0, 0, 0.7); /* 배경색 및 투명도 */
+    padding: 10px 20px; /* 텍스트 내용과 패딩 설정 */
+    border-radius: 5px; /* 모서리 둥글게 설정 */
+}
