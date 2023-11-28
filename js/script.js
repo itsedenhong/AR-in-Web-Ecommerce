@@ -1,21 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const chairModel = document.getElementById('chair_model');
-    const sofaModel = document.getElementById('sofa_model');
-    const lampModel = document.getElementById('lamp_model');
-  
-    chairModel.addEventListener('click', () => {
-      alert('You clicked the Leather Chair model!');
-      // 추가적인 동작이 필요한 경우 여기에 작성합니다.
-    });
-  
-    sofaModel.addEventListener('click', () => {
-      alert('You clicked the Modern Sofa model!');
-      // 추가적인 동작이 필요한 경우 여기에 작성합니다.
-    });
-  
-    lampModel.addEventListener('click', () => {
-      alert('You clicked the Basic Lamp model!');
-      // 추가적인 동작이 필요한 경우 여기에 작성합니다.
-    });
-  });
-  
+  const hotspot = document.getElementById('hotspot1');
+  if (hotspot) {
+      hotspot.addEventListener('click', () => {
+          alert('You clicked the hotspot!');
+      });
+  } else {
+      console.error("Hotspot element not found!");
+  }
+
+  const chairViewer = document.querySelector('model-viewer[src="./models/chair.glb"]');
+  const sofaViewer = document.querySelector('model-viewer[src="./models/sofa.glb"]');
+  const lampViewer = document.querySelector('model-viewer[src="./models/lamp.glb"]');  
+
+  if (chairViewer) {
+      chairViewer.addEventListener('click', () => {
+          alert('You clicked the Chair model!');
+      });
+  } else {
+      console.error("Chair viewer element not found!");
+  }
+
+  if (sofaViewer) {
+      sofaViewer.addEventListener('click', () => {
+          alert('You clicked the Sofa model!');
+      });
+  } else {
+      console.error("Sofa viewer element not found!");
+  }
+
+  if (lampViewer) {
+      lampViewer.addEventListener('click', () => {
+          alert('You clicked the Lamp model!');
+      });
+  } else {
+      console.error("Lamp viewer element not found!");
+  }
+});
