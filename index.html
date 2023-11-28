@@ -10,28 +10,31 @@
         <h1>Welcome to Eden's Product Showcase</h1>
     </div>
 
-    <div id="hotspot1"></div>
+    <div class="chair">
+        <h1>Leather Chair</h1>
+        <model-viewer id="chair_model" src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/chair.png" shadow-intensity="1">
+            <button id="chair" class="Hotspot" slot="hotspot-1" data-position="0.16905974095784987m 0.16438717057486124m 0.14032445387683617m" data-normal="0.3393167639404251m 0.1937682987060293m 0.9204987670418515m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Leather Chair</div>
+            </button>
+        </model-viewer>
+    </div>
 
-  <div id="model-viewer-container">
-    <model-viewer src="./models/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="../images/chair.png" shadow-intensity="1">
-        <button class="Hotspot" slot="hotspot-1" data-position="0.16905974095784987m 0.16438717057486124m 0.14032445387683617m" data-normal="0.3393167639404251m 0.1937682987060293m 0.9204987670418515m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Leather Chair</div>
-        </button>
-    </model-viewer>
-    
-    <model-viewer src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="../images/sofa.png" shadow-intensity="1">
-        <button class="Hotspot" slot="hotspot-1" data-position="0.04158859133208544m 0.08126265504678072m 0.07375073181654382m" data-normal="0.2734808800310144m 0.30189338693673107m 0.9132735576930556m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Modern Sofa</div>
-        </button>
-    </model-viewer>
-    
-    <model-viewer src="./models/lamp.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="../images/lamp.png" shadow-intensity="1">
-        <button class="Hotspot" slot="hotspot-1" data-position="0.021850723182723297m 0.22178576085197177m 0.031081418871381807m" data-normal="0.5726065749173223m 0.03164860701733459m 0.8192191868085827m" data-visibility-attribute="visible">
+    <div class="sofa">
+        <h1>Modern Sofa</h1>
+        <model-viewer id="chair_model" src="./models/sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/sofa.png" shadow-intensity="1">
+            <button id="sofa" class="Hotspot" slot="hotspot-1" data-position="0.04158859133208544m 0.08126265504678072m 0.07375073181654382m" data-normal="0.2734808800310144m 0.30189338693673107m 0.9132735576930556m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Modern Sofa</div>
+            </button>
+        </model-viewer>
+    </div>
+
+    <div class="lamp">
+        <h1>Basic Lamp</h1>
+        <button id="lamp" class="Hotspot" slot="hotspot-1" data-position="0.021850723182723297m 0.22178576085197177m 0.031081418871381807m" data-normal="0.5726065749173223m 0.03164860701733459m 0.8192191868085827m" data-visibility-attribute="visible">
             <div class="HotspotAnnotation">Basic Lamp</div>
         </button>
-    </model-viewer>    
-    
-  </div>
+        </model-viewer>
+    </div>
 
   <script src="./js/script.js"></script>
 </body>
