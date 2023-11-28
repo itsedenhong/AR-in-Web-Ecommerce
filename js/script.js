@@ -1,4 +1,3 @@
-// script.js 파일 내용
 document.addEventListener("DOMContentLoaded", function() {
   const hotspot = document.getElementById('hotspot1');
   if (hotspot) {
