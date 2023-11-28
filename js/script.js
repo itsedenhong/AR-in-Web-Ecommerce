@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const chairViewer = document.querySelector('model-viewer[src="./models/chair.glb"]');
   const sofaViewer = document.querySelector('model-viewer[src="./models/sofa.glb"]');
-  const lampViewer = document.querySelector('model-viewer[src="./models/lamp.glb"]');
+  const lampViewer = document.querySelector('model-viewer[src="./models/lamp.glb"]');  
 
   if (chairViewer) {
       chairViewer.addEventListener('click', () => {
